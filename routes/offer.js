@@ -37,7 +37,7 @@ router.post("/offer/publish", isAuthenticated, async (req, res) => {
         // Création de la nouvelle annonce (sans l'image)
         const newOffer = new Offer({
           product_name: title,
-          product_desciption: description,
+          product_description: description,
           product_price: price,
           product_details: [
             { MARQUE: brand },

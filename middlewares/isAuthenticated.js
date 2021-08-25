@@ -7,7 +7,7 @@ const isAuthenticated = async (req, res, next) => {
   if (req.headers.authorization) {
     const token = req.headers.authorization.replace("Bearer ", "");
 
-    // console.log(token); // tAdA60JtDU1XIN0V
+    // console.log(token);
 
     // Chercher dans la BDD le user qui possède ce token
     const user = await User.findOne({ token: token }).select("account _id");
