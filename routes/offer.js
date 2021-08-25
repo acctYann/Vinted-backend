@@ -144,8 +144,8 @@ router.get("/offers", async (req, res) => {
       })
       .sort(sort)
       .skip((page - 1) * limit) // Ignorer les x résultats
-      .limit(limit) // Renvoyer y résultats
-      .select("product_name product_price"); // Sélectionner seulement les clés qu'on veut dans notre response
+      .limit(limit); // Renvoyer y résultats
+    // .select("product_name product_price"); // Sélectionner seulement les clés qu'on veut dans notre response
 
     // Pour afficher la quantité totale d'offres
     const count = await Offer.countDocuments(filters);
