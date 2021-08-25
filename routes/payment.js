@@ -10,14 +10,14 @@ router.post("/payment", async (req, res) => {
     const response = await stripe.charges.create({
       amount: req.fields.price * 100, // Prix de la transaction en centime
       currency: "eur",
-      desciption: `Paiement Vinted pour : ${req.fields.title}.`,
+      description: `Paiement Vinted pour : ${req.fields.title}.`,
       // Envoie du token
       source: req.fields.token,
     });
     // Le paiement a fonctionné
     // On peut mettre à jour la base de données
     // On renvoie une réponse au client pour afficher un message de statut
-    console.log(response);
+    // console.log(response);
     res.status(200).json(response);
   } catch (error) {
     res.status(400).json({ message: error.message });
