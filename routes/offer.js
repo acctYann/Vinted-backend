@@ -131,10 +131,10 @@ router.get("/offers", async (req, res) => {
 
     let page;
     // Si ce paramètre n'est pas transmis, il faut forcer l'affichage de la 1ère page
-    if (Number(req.query.page) < 1) {
+    if (Number(req.query.skip) < 1) {
       page = 1;
     } else {
-      page = Number(req.query.page);
+      page = Number(req.query.skip);
     }
 
     const offers = await Offer.find(filters)
