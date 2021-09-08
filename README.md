@@ -14,5 +14,5 @@ See frontend code <a href="https://github.com/acctYann/Vinted-frontend.git"> her
 <br/>
 
 <h2>Contact</h2>
-<p>Visit my<a href="www.linkedin.com/in/yann-poncet-975b10216"> LinkedIn</a> and<a href="https://github.com/acctYann"> GitHub</a>.</p>
+<p>Visit my <a href="https://www.linkedin.com/in/yannponcet"> LinkedIn</a> and <a href="https://github.com/acctYann"> GitHub</a>.</p>
 <br/>
