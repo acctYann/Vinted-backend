@@ -9,7 +9,7 @@
 <br/>
 
 Personal fullstack project inspired by Vinted website.<br>
-The project is hosted on Netlify (frontend) and Heroku (backend).<br> 
+The project is hosted by Netlify (frontend) and Heroku (backend).<br> 
 See frontend code <a href="https://github.com/acctYann/Vinted-frontend.git"> here</a>.</br>
 <br/>
 
